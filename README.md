@@ -26,7 +26,10 @@ To compute simple take `n` steps divided by 2 plus 1, and use a for-loop until t
         result += i;
     }
 
-The rational behind this is for eample take `n` steps of 4, the number of possible ways would first adding 1 count of the most basic combination of `1,1,1,1` and last count of `2,2`. With that out of the way, the combination of numbers inbetween would be to include 2 steps in each combinations. as such, the possible combination would be `n / 2 + 1` for a `n` of 4, or any numbers.
+The rational behind this is for eample take `n` steps of 4, the number of possible ways would be to first adding 1 count of the most basic combination of `1,1,1,1` and last count of `2,2`. The last count of `2,2` would only apply to even numbers. In short, the basic combination of even numbers are 2, and odd numbers are 1. 
+
+With that out of the way, the combination of numbers inbetween would be to include 2 steps in each combinations. as such, the possible combination would be `n / 2 + 1` for a `n` of 4, or any numbers.
+
 
     [2,1,1],
     [1,2,1],
@@ -38,7 +41,7 @@ Taken these 3 possible combinations, together with the basic combinations mentio
 
     return steps % 2 == 0 ? result + 2 : result + 1;
 
-Similar pattern emerged with any `n` numbers, for example with `n` of 6, first by excluding `[1,1,1,1,1,1]` and `[2,2,2]` which is 2 ways here. 
+Similar pattern emerged with `n` numbers, for example with `n` of 6, first by excluding `[1,1,1,1,1,1]` and `[2,2,2]` which is 2 ways here. 
 
     2 ways of combinations
     [1,1,1,1,1,1]
@@ -67,5 +70,5 @@ Adding all up.
     
 Total of 11 ways to climb the steps.
 
-Any increase of `n` of steps will add additional for-loop to the computation. Which result to a big O notation of `O(n)`.
+Any increase in `n` steps will add additional for-loop to the computation. Which result to a big O notation of `O(n)`.
     
