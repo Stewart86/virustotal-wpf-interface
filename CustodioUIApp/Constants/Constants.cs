@@ -22,7 +22,7 @@
         public const string API_ROOT = "https://www.virustotal.com/vtapi/v2/";
 
         // API key (do not expose to anyone)
-        public static readonly string API_KEY = "a0577e0f662a9a45de00b97deb8ef40ab33e32205bef30377d3c6beb0712c89b";
+        public static readonly string API_KEY = "YOUR VIRUSTOTAL API KEY HERE";
 
         // Placeholders, not much use strings
         public const string MESSAGE = "Get report requested";
