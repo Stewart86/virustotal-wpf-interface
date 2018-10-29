@@ -15,7 +15,7 @@ For example, input of 3 will derive to 3 possible ways ([1,1,1],[1,2],[2,1]). Th
 - one step and 2 steps to make it 3 steps
 - or 2 steps first then one step to make it 3 steps
 
-## Challange solved (answer)
+## Challange solved (answer provided here is wrong! I realised when I was reading back on the explaination below. Update shall be available in due time.)
 
 To compute simple take `n` steps divided by 2 plus 1, and use a for-loop until the value is 1 loop below `n` steps.
 
